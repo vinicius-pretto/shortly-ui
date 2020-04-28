@@ -8,6 +8,8 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SuiButton {
     }
+    interface SuiLogo {
+    }
 }
 declare global {
     interface HTMLSuiButtonElement extends Components.SuiButton, HTMLStencilElement {
@@ -16,15 +18,25 @@ declare global {
         prototype: HTMLSuiButtonElement;
         new (): HTMLSuiButtonElement;
     };
+    interface HTMLSuiLogoElement extends Components.SuiLogo, HTMLStencilElement {
+    }
+    var HTMLSuiLogoElement: {
+        prototype: HTMLSuiLogoElement;
+        new (): HTMLSuiLogoElement;
+    };
     interface HTMLElementTagNameMap {
         "sui-button": HTMLSuiButtonElement;
+        "sui-logo": HTMLSuiLogoElement;
     }
 }
 declare namespace LocalJSX {
     interface SuiButton {
     }
+    interface SuiLogo {
+    }
     interface IntrinsicElements {
         "sui-button": SuiButton;
+        "sui-logo": SuiLogo;
     }
 }
 export { LocalJSX as JSX };
@@ -32,6 +44,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
+            "sui-logo": LocalJSX.SuiLogo & JSXBase.HTMLAttributes<HTMLSuiLogoElement>;
         }
     }
 }
