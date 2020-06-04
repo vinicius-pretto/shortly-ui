@@ -1,0 +1,12 @@
+button {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  background-color: $color-primary;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-primary;
+  border-radius: $border-radius-base;
+  color: $color-white;
+  padding: $spacing-sm $spacing-lg;
+}
