@@ -1,4 +1,4 @@
-# sui-button
+# sui-link
 
 
 
@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `type`   | `type`    |             | `string` | `undefined` |
+| `href`   | `href`    |             | `string` | `undefined` |
 
 
 ----------------------------------------------

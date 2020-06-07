@@ -1,0 +1,26 @@
+a {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  color: $color-violet-light;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:host([variant="button"]) a {
+  display: inline-block;
+  background-color: $color-primary;
+  color: $color-white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-primary;
+  border-radius: $border-radius-base;
+  padding: $spacing-sm $spacing-lg;
+}
+
+:host([variant="button"]) a:hover {
+  text-decoration: none;
+}
