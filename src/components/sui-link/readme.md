@@ -9,6 +9,6 @@
 
 ## How to use
 
-```
+```bash
 <sui-link href="/">Link text</sui-link>
 ```
