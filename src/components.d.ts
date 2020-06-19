@@ -11,6 +11,8 @@ export namespace Components {
     }
     interface SuiDetailedRecordsIcon {
     }
+    interface SuiFullyCustomizableIcon {
+    }
     interface SuiLink {
         "href": string;
     }
@@ -30,6 +32,12 @@ declare global {
         prototype: HTMLSuiDetailedRecordsIconElement;
         new (): HTMLSuiDetailedRecordsIconElement;
     };
+    interface HTMLSuiFullyCustomizableIconElement extends Components.SuiFullyCustomizableIcon, HTMLStencilElement {
+    }
+    var HTMLSuiFullyCustomizableIconElement: {
+        prototype: HTMLSuiFullyCustomizableIconElement;
+        new (): HTMLSuiFullyCustomizableIconElement;
+    };
     interface HTMLSuiLinkElement extends Components.SuiLink, HTMLStencilElement {
     }
     var HTMLSuiLinkElement: {
@@ -45,6 +53,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "sui-button": HTMLSuiButtonElement;
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
+        "sui-fully-customizable-icon": HTMLSuiFullyCustomizableIconElement;
         "sui-link": HTMLSuiLinkElement;
         "sui-statistics-icon": HTMLSuiStatisticsIconElement;
     }
@@ -55,6 +64,8 @@ declare namespace LocalJSX {
     }
     interface SuiDetailedRecordsIcon {
     }
+    interface SuiFullyCustomizableIcon {
+    }
     interface SuiLink {
         "href"?: string;
     }
@@ -63,6 +74,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "sui-button": SuiButton;
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
+        "sui-fully-customizable-icon": SuiFullyCustomizableIcon;
         "sui-link": SuiLink;
         "sui-statistics-icon": SuiStatisticsIcon;
     }
@@ -73,6 +85,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
             "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
+            "sui-fully-customizable-icon": LocalJSX.SuiFullyCustomizableIcon & JSXBase.HTMLAttributes<HTMLSuiFullyCustomizableIconElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
             "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;
         }

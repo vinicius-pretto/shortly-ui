@@ -15,7 +15,7 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build --docs && npm run copy",
+    "build": "stencil build && npm run copy",
     "copy": "cp -R dist/ ~/vinicius/shortly/public/scripts/shortly-ui",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",

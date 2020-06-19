@@ -6,20 +6,17 @@ export const config: Config = {
   taskQueue: "async",
   plugins: [
     sass({
-      injectGlobalPaths: ["node_modules/shortly-tokens/dist/index.scss"],
-    }),
+      injectGlobalPaths: ["node_modules/shortly-tokens/dist/index.scss"]
+    })
   ],
   outputTargets: [
     {
       type: "dist",
-      esmLoaderPath: "../loader",
-    },
-    {
-      type: "docs-readme",
+      esmLoaderPath: "../loader"
     },
     {
       type: "www",
-      serviceWorker: null, // disable service workers
-    },
-  ],
+      serviceWorker: null // disable service workers
+    }
+  ]
 };
