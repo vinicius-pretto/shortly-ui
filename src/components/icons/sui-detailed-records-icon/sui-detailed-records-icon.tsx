@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h } from "@stencil/core";
 
 @Component({
   tag: "sui-detailed-records-icon",
-  styleUrl: "sui-detailed-records.scss",
+  styleUrl: "sui-detailed-records-icon.scss",
   shadow: true
 })
 export class SuiDetailedRecords implements ComponentInterface {
