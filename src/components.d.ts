@@ -18,6 +18,8 @@ export namespace Components {
     interface SuiLink {
         "href": string;
     }
+    interface SuiPinterestIcon {
+    }
     interface SuiStatisticsIcon {
     }
     interface SuiTwitterIcon {
@@ -54,6 +56,12 @@ declare global {
         prototype: HTMLSuiLinkElement;
         new (): HTMLSuiLinkElement;
     };
+    interface HTMLSuiPinterestIconElement extends Components.SuiPinterestIcon, HTMLStencilElement {
+    }
+    var HTMLSuiPinterestIconElement: {
+        prototype: HTMLSuiPinterestIconElement;
+        new (): HTMLSuiPinterestIconElement;
+    };
     interface HTMLSuiStatisticsIconElement extends Components.SuiStatisticsIcon, HTMLStencilElement {
     }
     var HTMLSuiStatisticsIconElement: {
@@ -72,6 +80,7 @@ declare global {
         "sui-facebook-icon": HTMLSuiFacebookIconElement;
         "sui-fully-customizable-icon": HTMLSuiFullyCustomizableIconElement;
         "sui-link": HTMLSuiLinkElement;
+        "sui-pinterest-icon": HTMLSuiPinterestIconElement;
         "sui-statistics-icon": HTMLSuiStatisticsIconElement;
         "sui-twitter-icon": HTMLSuiTwitterIconElement;
     }
@@ -89,6 +98,8 @@ declare namespace LocalJSX {
     interface SuiLink {
         "href"?: string;
     }
+    interface SuiPinterestIcon {
+    }
     interface SuiStatisticsIcon {
     }
     interface SuiTwitterIcon {
@@ -99,6 +110,7 @@ declare namespace LocalJSX {
         "sui-facebook-icon": SuiFacebookIcon;
         "sui-fully-customizable-icon": SuiFullyCustomizableIcon;
         "sui-link": SuiLink;
+        "sui-pinterest-icon": SuiPinterestIcon;
         "sui-statistics-icon": SuiStatisticsIcon;
         "sui-twitter-icon": SuiTwitterIcon;
     }
@@ -112,6 +124,7 @@ declare module "@stencil/core" {
             "sui-facebook-icon": LocalJSX.SuiFacebookIcon & JSXBase.HTMLAttributes<HTMLSuiFacebookIconElement>;
             "sui-fully-customizable-icon": LocalJSX.SuiFullyCustomizableIcon & JSXBase.HTMLAttributes<HTMLSuiFullyCustomizableIconElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
+            "sui-pinterest-icon": LocalJSX.SuiPinterestIcon & JSXBase.HTMLAttributes<HTMLSuiPinterestIconElement>;
             "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;
             "sui-twitter-icon": LocalJSX.SuiTwitterIcon & JSXBase.HTMLAttributes<HTMLSuiTwitterIconElement>;
         }
