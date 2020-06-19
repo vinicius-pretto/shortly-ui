@@ -20,6 +20,8 @@ export namespace Components {
     }
     interface SuiStatisticsIcon {
     }
+    interface SuiTwitterIcon {
+    }
 }
 declare global {
     interface HTMLSuiButtonElement extends Components.SuiButton, HTMLStencilElement {
@@ -58,6 +60,12 @@ declare global {
         prototype: HTMLSuiStatisticsIconElement;
         new (): HTMLSuiStatisticsIconElement;
     };
+    interface HTMLSuiTwitterIconElement extends Components.SuiTwitterIcon, HTMLStencilElement {
+    }
+    var HTMLSuiTwitterIconElement: {
+        prototype: HTMLSuiTwitterIconElement;
+        new (): HTMLSuiTwitterIconElement;
+    };
     interface HTMLElementTagNameMap {
         "sui-button": HTMLSuiButtonElement;
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
@@ -65,6 +73,7 @@ declare global {
         "sui-fully-customizable-icon": HTMLSuiFullyCustomizableIconElement;
         "sui-link": HTMLSuiLinkElement;
         "sui-statistics-icon": HTMLSuiStatisticsIconElement;
+        "sui-twitter-icon": HTMLSuiTwitterIconElement;
     }
 }
 declare namespace LocalJSX {
@@ -82,6 +91,8 @@ declare namespace LocalJSX {
     }
     interface SuiStatisticsIcon {
     }
+    interface SuiTwitterIcon {
+    }
     interface IntrinsicElements {
         "sui-button": SuiButton;
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
@@ -89,6 +100,7 @@ declare namespace LocalJSX {
         "sui-fully-customizable-icon": SuiFullyCustomizableIcon;
         "sui-link": SuiLink;
         "sui-statistics-icon": SuiStatisticsIcon;
+        "sui-twitter-icon": SuiTwitterIcon;
     }
 }
 export { LocalJSX as JSX };
@@ -101,6 +113,7 @@ declare module "@stencil/core" {
             "sui-fully-customizable-icon": LocalJSX.SuiFullyCustomizableIcon & JSXBase.HTMLAttributes<HTMLSuiFullyCustomizableIconElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
             "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;
+            "sui-twitter-icon": LocalJSX.SuiTwitterIcon & JSXBase.HTMLAttributes<HTMLSuiTwitterIconElement>;
         }
     }
 }
