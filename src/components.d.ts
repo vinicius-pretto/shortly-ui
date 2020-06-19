@@ -11,6 +11,8 @@ export namespace Components {
     }
     interface SuiDetailedRecordsIcon {
     }
+    interface SuiFacebookIcon {
+    }
     interface SuiFullyCustomizableIcon {
     }
     interface SuiLink {
@@ -31,6 +33,12 @@ declare global {
     var HTMLSuiDetailedRecordsIconElement: {
         prototype: HTMLSuiDetailedRecordsIconElement;
         new (): HTMLSuiDetailedRecordsIconElement;
+    };
+    interface HTMLSuiFacebookIconElement extends Components.SuiFacebookIcon, HTMLStencilElement {
+    }
+    var HTMLSuiFacebookIconElement: {
+        prototype: HTMLSuiFacebookIconElement;
+        new (): HTMLSuiFacebookIconElement;
     };
     interface HTMLSuiFullyCustomizableIconElement extends Components.SuiFullyCustomizableIcon, HTMLStencilElement {
     }
@@ -53,6 +61,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "sui-button": HTMLSuiButtonElement;
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
+        "sui-facebook-icon": HTMLSuiFacebookIconElement;
         "sui-fully-customizable-icon": HTMLSuiFullyCustomizableIconElement;
         "sui-link": HTMLSuiLinkElement;
         "sui-statistics-icon": HTMLSuiStatisticsIconElement;
@@ -64,6 +73,8 @@ declare namespace LocalJSX {
     }
     interface SuiDetailedRecordsIcon {
     }
+    interface SuiFacebookIcon {
+    }
     interface SuiFullyCustomizableIcon {
     }
     interface SuiLink {
@@ -74,6 +85,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "sui-button": SuiButton;
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
+        "sui-facebook-icon": SuiFacebookIcon;
         "sui-fully-customizable-icon": SuiFullyCustomizableIcon;
         "sui-link": SuiLink;
         "sui-statistics-icon": SuiStatisticsIcon;
@@ -85,6 +97,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
             "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
+            "sui-facebook-icon": LocalJSX.SuiFacebookIcon & JSXBase.HTMLAttributes<HTMLSuiFacebookIconElement>;
             "sui-fully-customizable-icon": LocalJSX.SuiFullyCustomizableIcon & JSXBase.HTMLAttributes<HTMLSuiFullyCustomizableIconElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
             "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;
