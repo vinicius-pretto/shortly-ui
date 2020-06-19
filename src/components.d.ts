@@ -9,6 +9,8 @@ export namespace Components {
     interface SuiButton {
         "type": string;
     }
+    interface SuiDetailedRecordsIcon {
+    }
     interface SuiLink {
         "href": string;
     }
@@ -21,6 +23,12 @@ declare global {
     var HTMLSuiButtonElement: {
         prototype: HTMLSuiButtonElement;
         new (): HTMLSuiButtonElement;
+    };
+    interface HTMLSuiDetailedRecordsIconElement extends Components.SuiDetailedRecordsIcon, HTMLStencilElement {
+    }
+    var HTMLSuiDetailedRecordsIconElement: {
+        prototype: HTMLSuiDetailedRecordsIconElement;
+        new (): HTMLSuiDetailedRecordsIconElement;
     };
     interface HTMLSuiLinkElement extends Components.SuiLink, HTMLStencilElement {
     }
@@ -36,6 +44,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "sui-button": HTMLSuiButtonElement;
+        "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
         "sui-link": HTMLSuiLinkElement;
         "sui-statistics-icon": HTMLSuiStatisticsIconElement;
     }
@@ -44,6 +53,8 @@ declare namespace LocalJSX {
     interface SuiButton {
         "type"?: string;
     }
+    interface SuiDetailedRecordsIcon {
+    }
     interface SuiLink {
         "href"?: string;
     }
@@ -51,6 +62,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "sui-button": SuiButton;
+        "sui-detailed-records-icon": SuiDetailedRecordsIcon;
         "sui-link": SuiLink;
         "sui-statistics-icon": SuiStatisticsIcon;
     }
@@ -60,6 +72,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
+            "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
             "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;
         }
