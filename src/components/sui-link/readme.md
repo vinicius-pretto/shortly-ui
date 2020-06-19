@@ -1,17 +1,14 @@
-# sui-link
-
-
-
-<!-- Auto Generated Below -->
-
+# Link
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `href`   | `href`    |             | `string` | `undefined` |
+| Property | Type       | Default     | Description             |
+| -------- | ---------- | ----------- | ----------------------- |
+| href     | `string`   | `undefined` | Link address            |
+| variant  | `"button"` | `undefined` | Applies `button` styles |
 
+## How to use
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+```
+<sui-link href="/">Link text</sui-link>
+```

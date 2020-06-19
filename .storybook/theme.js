@@ -7,7 +7,7 @@ export default create({
   fontBase: "Poppins, sans-serif",
 
   appBg: shortlyTokens["color-secondary"],
-  appContentBg: shortlyTokens["color-violet-lighter"],
+  appContentBg: shortlyTokens["color-white"],
   appBorderRadius: 0,
 
   colorPrimary: shortlyTokens["color-secondary"],
@@ -20,7 +20,7 @@ export default create({
   textColor: shortlyTokens["color-black"],
   textInverseColor: shortlyTokens["color-secondary"],
 
-  inputTextColor: shortlyTokens["color-white"],
+  inputTextColor: shortlyTokens["color-black"],
 
   brandTitle: "Shortly UI",
   brandUrl: "/",
