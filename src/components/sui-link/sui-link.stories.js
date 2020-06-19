@@ -1,7 +1,7 @@
 import notes from "./readme.md";
 
 export default {
-  title: "Link",
+  title: "Components/Link",
   decorators: [],
   parameters: {
     notes

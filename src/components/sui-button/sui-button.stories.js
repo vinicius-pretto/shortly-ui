@@ -1,7 +1,7 @@
 import notes from "./readme.md";
 
 export default {
-  title: "Button",
+  title: "Components/Button",
   decorators: [],
   parameters: {
     notes

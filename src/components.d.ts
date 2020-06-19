@@ -12,6 +12,8 @@ export namespace Components {
     interface SuiLink {
         "href": string;
     }
+    interface SuiStatisticsIcon {
+    }
 }
 declare global {
     interface HTMLSuiButtonElement extends Components.SuiButton, HTMLStencilElement {
@@ -26,9 +28,16 @@ declare global {
         prototype: HTMLSuiLinkElement;
         new (): HTMLSuiLinkElement;
     };
+    interface HTMLSuiStatisticsIconElement extends Components.SuiStatisticsIcon, HTMLStencilElement {
+    }
+    var HTMLSuiStatisticsIconElement: {
+        prototype: HTMLSuiStatisticsIconElement;
+        new (): HTMLSuiStatisticsIconElement;
+    };
     interface HTMLElementTagNameMap {
         "sui-button": HTMLSuiButtonElement;
         "sui-link": HTMLSuiLinkElement;
+        "sui-statistics-icon": HTMLSuiStatisticsIconElement;
     }
 }
 declare namespace LocalJSX {
@@ -38,9 +47,12 @@ declare namespace LocalJSX {
     interface SuiLink {
         "href"?: string;
     }
+    interface SuiStatisticsIcon {
+    }
     interface IntrinsicElements {
         "sui-button": SuiButton;
         "sui-link": SuiLink;
+        "sui-statistics-icon": SuiStatisticsIcon;
     }
 }
 export { LocalJSX as JSX };
@@ -49,6 +61,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
+            "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;
         }
     }
 }
