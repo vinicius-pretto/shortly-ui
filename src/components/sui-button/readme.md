@@ -1,17 +1,13 @@
-# sui-button
-
-
-
-<!-- Auto Generated Below -->
-
+# Button
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `type`   | `type`    |             | `string` | `undefined` |
+| Property | Type                                     | Default    | Description                |
+| -------- | ---------------------------------------- | ---------- | -------------------------- |
+| type     | `"submit"`<br> `"reset"` <br> `"button"` | `"submit"` | HTML button type attribute |
 
+## How to use
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+```bash
+<sui-button type="button">Click here</sui-button>
+```
