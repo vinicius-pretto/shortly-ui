@@ -15,6 +15,8 @@ export namespace Components {
     }
     interface SuiFullyCustomizableIcon {
     }
+    interface SuiInstagramIcon {
+    }
     interface SuiLink {
         "href": string;
     }
@@ -50,6 +52,12 @@ declare global {
         prototype: HTMLSuiFullyCustomizableIconElement;
         new (): HTMLSuiFullyCustomizableIconElement;
     };
+    interface HTMLSuiInstagramIconElement extends Components.SuiInstagramIcon, HTMLStencilElement {
+    }
+    var HTMLSuiInstagramIconElement: {
+        prototype: HTMLSuiInstagramIconElement;
+        new (): HTMLSuiInstagramIconElement;
+    };
     interface HTMLSuiLinkElement extends Components.SuiLink, HTMLStencilElement {
     }
     var HTMLSuiLinkElement: {
@@ -79,6 +87,7 @@ declare global {
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
         "sui-facebook-icon": HTMLSuiFacebookIconElement;
         "sui-fully-customizable-icon": HTMLSuiFullyCustomizableIconElement;
+        "sui-instagram-icon": HTMLSuiInstagramIconElement;
         "sui-link": HTMLSuiLinkElement;
         "sui-pinterest-icon": HTMLSuiPinterestIconElement;
         "sui-statistics-icon": HTMLSuiStatisticsIconElement;
@@ -95,6 +104,8 @@ declare namespace LocalJSX {
     }
     interface SuiFullyCustomizableIcon {
     }
+    interface SuiInstagramIcon {
+    }
     interface SuiLink {
         "href"?: string;
     }
@@ -109,6 +120,7 @@ declare namespace LocalJSX {
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
         "sui-facebook-icon": SuiFacebookIcon;
         "sui-fully-customizable-icon": SuiFullyCustomizableIcon;
+        "sui-instagram-icon": SuiInstagramIcon;
         "sui-link": SuiLink;
         "sui-pinterest-icon": SuiPinterestIcon;
         "sui-statistics-icon": SuiStatisticsIcon;
@@ -123,6 +135,7 @@ declare module "@stencil/core" {
             "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
             "sui-facebook-icon": LocalJSX.SuiFacebookIcon & JSXBase.HTMLAttributes<HTMLSuiFacebookIconElement>;
             "sui-fully-customizable-icon": LocalJSX.SuiFullyCustomizableIcon & JSXBase.HTMLAttributes<HTMLSuiFullyCustomizableIconElement>;
+            "sui-instagram-icon": LocalJSX.SuiInstagramIcon & JSXBase.HTMLAttributes<HTMLSuiInstagramIconElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
             "sui-pinterest-icon": LocalJSX.SuiPinterestIcon & JSXBase.HTMLAttributes<HTMLSuiPinterestIconElement>;
             "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;

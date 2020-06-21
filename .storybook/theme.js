@@ -16,5 +16,5 @@ export default create({
 
   brandTitle: "Shortly UI",
   brandUrl: "/",
-  brandImage: "/shortly-logo.png",
+  brandImage: "https://storage.cloud.google.com/shortly/shortly-logo.png",
 });
