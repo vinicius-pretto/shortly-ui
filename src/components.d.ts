@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface SuiBurgerButton {
+    }
     interface SuiButton {
         "type": string;
     }
@@ -33,6 +35,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLSuiBurgerButtonElement extends Components.SuiBurgerButton, HTMLStencilElement {
+    }
+    var HTMLSuiBurgerButtonElement: {
+        prototype: HTMLSuiBurgerButtonElement;
+        new (): HTMLSuiBurgerButtonElement;
+    };
     interface HTMLSuiButtonElement extends Components.SuiButton, HTMLStencilElement {
     }
     var HTMLSuiButtonElement: {
@@ -100,6 +108,7 @@ declare global {
         new (): HTMLSuiTwitterIconElement;
     };
     interface HTMLElementTagNameMap {
+        "sui-burger-button": HTMLSuiBurgerButtonElement;
         "sui-button": HTMLSuiButtonElement;
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
         "sui-facebook-icon": HTMLSuiFacebookIconElement;
@@ -114,6 +123,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface SuiBurgerButton {
+    }
     interface SuiButton {
         "type"?: string;
     }
@@ -140,6 +151,7 @@ declare namespace LocalJSX {
     interface SuiTwitterIcon {
     }
     interface IntrinsicElements {
+        "sui-burger-button": SuiBurgerButton;
         "sui-button": SuiButton;
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
         "sui-facebook-icon": SuiFacebookIcon;
@@ -157,6 +169,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "sui-burger-button": LocalJSX.SuiBurgerButton & JSXBase.HTMLAttributes<HTMLSuiBurgerButtonElement>;
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
             "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
             "sui-facebook-icon": LocalJSX.SuiFacebookIcon & JSXBase.HTMLAttributes<HTMLSuiFacebookIconElement>;
