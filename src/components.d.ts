@@ -11,6 +11,10 @@ export namespace Components {
     interface SuiButton {
         "type": string;
     }
+    interface SuiCard {
+        "cardTitle": string;
+        "description": string;
+    }
     interface SuiCloseButton {
     }
     interface SuiDetailedRecordsIcon {
@@ -48,6 +52,12 @@ declare global {
     var HTMLSuiButtonElement: {
         prototype: HTMLSuiButtonElement;
         new (): HTMLSuiButtonElement;
+    };
+    interface HTMLSuiCardElement extends Components.SuiCard, HTMLStencilElement {
+    }
+    var HTMLSuiCardElement: {
+        prototype: HTMLSuiCardElement;
+        new (): HTMLSuiCardElement;
     };
     interface HTMLSuiCloseButtonElement extends Components.SuiCloseButton, HTMLStencilElement {
     }
@@ -118,6 +128,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "sui-burger-button": HTMLSuiBurgerButtonElement;
         "sui-button": HTMLSuiButtonElement;
+        "sui-card": HTMLSuiCardElement;
         "sui-close-button": HTMLSuiCloseButtonElement;
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
         "sui-facebook-icon": HTMLSuiFacebookIconElement;
@@ -136,6 +147,10 @@ declare namespace LocalJSX {
     }
     interface SuiButton {
         "type"?: string;
+    }
+    interface SuiCard {
+        "cardTitle"?: string;
+        "description"?: string;
     }
     interface SuiCloseButton {
     }
@@ -164,6 +179,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "sui-burger-button": SuiBurgerButton;
         "sui-button": SuiButton;
+        "sui-card": SuiCard;
         "sui-close-button": SuiCloseButton;
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
         "sui-facebook-icon": SuiFacebookIcon;
@@ -183,6 +199,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "sui-burger-button": LocalJSX.SuiBurgerButton & JSXBase.HTMLAttributes<HTMLSuiBurgerButtonElement>;
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
+            "sui-card": LocalJSX.SuiCard & JSXBase.HTMLAttributes<HTMLSuiCardElement>;
             "sui-close-button": LocalJSX.SuiCloseButton & JSXBase.HTMLAttributes<HTMLSuiCloseButtonElement>;
             "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
             "sui-facebook-icon": LocalJSX.SuiFacebookIcon & JSXBase.HTMLAttributes<HTMLSuiFacebookIconElement>;
