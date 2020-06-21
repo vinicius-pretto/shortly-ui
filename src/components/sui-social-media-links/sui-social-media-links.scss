@@ -1,0 +1,25 @@
+:host {
+  display: inline-block;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-right: $spacing-lg;
+}
+
+ul li:nth-last-child(1) {
+  margin-right: 0;
+}
+
+ul li a {
+  display: block;
+  height: 24px;
+}

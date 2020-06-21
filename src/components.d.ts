@@ -35,6 +35,8 @@ export namespace Components {
     interface SuiShortlyLogo {
         "color": string;
     }
+    interface SuiSocialMediaLinks {
+    }
     interface SuiStatisticsIcon {
     }
     interface SuiTwitterIcon {
@@ -113,6 +115,12 @@ declare global {
         prototype: HTMLSuiShortlyLogoElement;
         new (): HTMLSuiShortlyLogoElement;
     };
+    interface HTMLSuiSocialMediaLinksElement extends Components.SuiSocialMediaLinks, HTMLStencilElement {
+    }
+    var HTMLSuiSocialMediaLinksElement: {
+        prototype: HTMLSuiSocialMediaLinksElement;
+        new (): HTMLSuiSocialMediaLinksElement;
+    };
     interface HTMLSuiStatisticsIconElement extends Components.SuiStatisticsIcon, HTMLStencilElement {
     }
     var HTMLSuiStatisticsIconElement: {
@@ -138,6 +146,7 @@ declare global {
         "sui-link": HTMLSuiLinkElement;
         "sui-pinterest-icon": HTMLSuiPinterestIconElement;
         "sui-shortly-logo": HTMLSuiShortlyLogoElement;
+        "sui-social-media-links": HTMLSuiSocialMediaLinksElement;
         "sui-statistics-icon": HTMLSuiStatisticsIconElement;
         "sui-twitter-icon": HTMLSuiTwitterIconElement;
     }
@@ -172,6 +181,8 @@ declare namespace LocalJSX {
     interface SuiShortlyLogo {
         "color"?: string;
     }
+    interface SuiSocialMediaLinks {
+    }
     interface SuiStatisticsIcon {
     }
     interface SuiTwitterIcon {
@@ -189,6 +200,7 @@ declare namespace LocalJSX {
         "sui-link": SuiLink;
         "sui-pinterest-icon": SuiPinterestIcon;
         "sui-shortly-logo": SuiShortlyLogo;
+        "sui-social-media-links": SuiSocialMediaLinks;
         "sui-statistics-icon": SuiStatisticsIcon;
         "sui-twitter-icon": SuiTwitterIcon;
     }
@@ -209,6 +221,7 @@ declare module "@stencil/core" {
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
             "sui-pinterest-icon": LocalJSX.SuiPinterestIcon & JSXBase.HTMLAttributes<HTMLSuiPinterestIconElement>;
             "sui-shortly-logo": LocalJSX.SuiShortlyLogo & JSXBase.HTMLAttributes<HTMLSuiShortlyLogoElement>;
+            "sui-social-media-links": LocalJSX.SuiSocialMediaLinks & JSXBase.HTMLAttributes<HTMLSuiSocialMediaLinksElement>;
             "sui-statistics-icon": LocalJSX.SuiStatisticsIcon & JSXBase.HTMLAttributes<HTMLSuiStatisticsIconElement>;
             "sui-twitter-icon": LocalJSX.SuiTwitterIcon & JSXBase.HTMLAttributes<HTMLSuiTwitterIconElement>;
         }
