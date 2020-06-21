@@ -30,6 +30,11 @@ export namespace Components {
     interface SuiLink {
         "href": string;
     }
+    interface SuiList {
+    }
+    interface SuiListItemLink {
+        "href": string;
+    }
     interface SuiPinterestIcon {
     }
     interface SuiShortlyLogo {
@@ -103,6 +108,18 @@ declare global {
         prototype: HTMLSuiLinkElement;
         new (): HTMLSuiLinkElement;
     };
+    interface HTMLSuiListElement extends Components.SuiList, HTMLStencilElement {
+    }
+    var HTMLSuiListElement: {
+        prototype: HTMLSuiListElement;
+        new (): HTMLSuiListElement;
+    };
+    interface HTMLSuiListItemLinkElement extends Components.SuiListItemLink, HTMLStencilElement {
+    }
+    var HTMLSuiListItemLinkElement: {
+        prototype: HTMLSuiListItemLinkElement;
+        new (): HTMLSuiListItemLinkElement;
+    };
     interface HTMLSuiPinterestIconElement extends Components.SuiPinterestIcon, HTMLStencilElement {
     }
     var HTMLSuiPinterestIconElement: {
@@ -144,6 +161,8 @@ declare global {
         "sui-illustration-icon": HTMLSuiIllustrationIconElement;
         "sui-instagram-icon": HTMLSuiInstagramIconElement;
         "sui-link": HTMLSuiLinkElement;
+        "sui-list": HTMLSuiListElement;
+        "sui-list-item-link": HTMLSuiListItemLinkElement;
         "sui-pinterest-icon": HTMLSuiPinterestIconElement;
         "sui-shortly-logo": HTMLSuiShortlyLogoElement;
         "sui-social-media-links": HTMLSuiSocialMediaLinksElement;
@@ -176,6 +195,11 @@ declare namespace LocalJSX {
     interface SuiLink {
         "href"?: string;
     }
+    interface SuiList {
+    }
+    interface SuiListItemLink {
+        "href"?: string;
+    }
     interface SuiPinterestIcon {
     }
     interface SuiShortlyLogo {
@@ -198,6 +222,8 @@ declare namespace LocalJSX {
         "sui-illustration-icon": SuiIllustrationIcon;
         "sui-instagram-icon": SuiInstagramIcon;
         "sui-link": SuiLink;
+        "sui-list": SuiList;
+        "sui-list-item-link": SuiListItemLink;
         "sui-pinterest-icon": SuiPinterestIcon;
         "sui-shortly-logo": SuiShortlyLogo;
         "sui-social-media-links": SuiSocialMediaLinks;
@@ -219,6 +245,8 @@ declare module "@stencil/core" {
             "sui-illustration-icon": LocalJSX.SuiIllustrationIcon & JSXBase.HTMLAttributes<HTMLSuiIllustrationIconElement>;
             "sui-instagram-icon": LocalJSX.SuiInstagramIcon & JSXBase.HTMLAttributes<HTMLSuiInstagramIconElement>;
             "sui-link": LocalJSX.SuiLink & JSXBase.HTMLAttributes<HTMLSuiLinkElement>;
+            "sui-list": LocalJSX.SuiList & JSXBase.HTMLAttributes<HTMLSuiListElement>;
+            "sui-list-item-link": LocalJSX.SuiListItemLink & JSXBase.HTMLAttributes<HTMLSuiListItemLinkElement>;
             "sui-pinterest-icon": LocalJSX.SuiPinterestIcon & JSXBase.HTMLAttributes<HTMLSuiPinterestIconElement>;
             "sui-shortly-logo": LocalJSX.SuiShortlyLogo & JSXBase.HTMLAttributes<HTMLSuiShortlyLogoElement>;
             "sui-social-media-links": LocalJSX.SuiSocialMediaLinks & JSXBase.HTMLAttributes<HTMLSuiSocialMediaLinksElement>;
