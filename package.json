@@ -15,14 +15,15 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build && npm run copy",
+    "build": "stencil build",
+    "build:prod": "sh bin/build_prod.sh",
     "copy": "cp -R dist/ ~/vinicius/shortly/public/scripts/shortly-ui",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "storybook": "start-storybook -s ./dist -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./dist"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -33,7 +34,7 @@
     "@storybook/addon-notes": "^5.3.19",
     "@storybook/html": "^5.3.19",
     "babel-loader": "^8.1.0",
-    "shortly-tokens": "0.0.9"
+    "shortly-tokens": "0.0.10"
   },
   "license": "MIT",
   "dependencies": {}
