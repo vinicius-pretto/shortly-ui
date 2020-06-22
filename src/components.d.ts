@@ -17,6 +17,8 @@ export namespace Components {
     }
     interface SuiCloseButton {
     }
+    interface SuiColors {
+    }
     interface SuiDetailedRecordsIcon {
     }
     interface SuiFacebookIcon {
@@ -71,6 +73,12 @@ declare global {
     var HTMLSuiCloseButtonElement: {
         prototype: HTMLSuiCloseButtonElement;
         new (): HTMLSuiCloseButtonElement;
+    };
+    interface HTMLSuiColorsElement extends Components.SuiColors, HTMLStencilElement {
+    }
+    var HTMLSuiColorsElement: {
+        prototype: HTMLSuiColorsElement;
+        new (): HTMLSuiColorsElement;
     };
     interface HTMLSuiDetailedRecordsIconElement extends Components.SuiDetailedRecordsIcon, HTMLStencilElement {
     }
@@ -155,6 +163,7 @@ declare global {
         "sui-button": HTMLSuiButtonElement;
         "sui-card": HTMLSuiCardElement;
         "sui-close-button": HTMLSuiCloseButtonElement;
+        "sui-colors": HTMLSuiColorsElement;
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
         "sui-facebook-icon": HTMLSuiFacebookIconElement;
         "sui-fully-customizable-icon": HTMLSuiFullyCustomizableIconElement;
@@ -181,6 +190,8 @@ declare namespace LocalJSX {
         "description"?: string;
     }
     interface SuiCloseButton {
+    }
+    interface SuiColors {
     }
     interface SuiDetailedRecordsIcon {
     }
@@ -216,6 +227,7 @@ declare namespace LocalJSX {
         "sui-button": SuiButton;
         "sui-card": SuiCard;
         "sui-close-button": SuiCloseButton;
+        "sui-colors": SuiColors;
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
         "sui-facebook-icon": SuiFacebookIcon;
         "sui-fully-customizable-icon": SuiFullyCustomizableIcon;
@@ -239,6 +251,7 @@ declare module "@stencil/core" {
             "sui-button": LocalJSX.SuiButton & JSXBase.HTMLAttributes<HTMLSuiButtonElement>;
             "sui-card": LocalJSX.SuiCard & JSXBase.HTMLAttributes<HTMLSuiCardElement>;
             "sui-close-button": LocalJSX.SuiCloseButton & JSXBase.HTMLAttributes<HTMLSuiCloseButtonElement>;
+            "sui-colors": LocalJSX.SuiColors & JSXBase.HTMLAttributes<HTMLSuiColorsElement>;
             "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
             "sui-facebook-icon": LocalJSX.SuiFacebookIcon & JSXBase.HTMLAttributes<HTMLSuiFacebookIconElement>;
             "sui-fully-customizable-icon": LocalJSX.SuiFullyCustomizableIcon & JSXBase.HTMLAttributes<HTMLSuiFullyCustomizableIconElement>;
