@@ -23,6 +23,8 @@ export namespace Components {
     }
     interface SuiFacebookIcon {
     }
+    interface SuiFonts {
+    }
     interface SuiFullyCustomizableIcon {
     }
     interface SuiIllustrationIcon {
@@ -91,6 +93,12 @@ declare global {
     var HTMLSuiFacebookIconElement: {
         prototype: HTMLSuiFacebookIconElement;
         new (): HTMLSuiFacebookIconElement;
+    };
+    interface HTMLSuiFontsElement extends Components.SuiFonts, HTMLStencilElement {
+    }
+    var HTMLSuiFontsElement: {
+        prototype: HTMLSuiFontsElement;
+        new (): HTMLSuiFontsElement;
     };
     interface HTMLSuiFullyCustomizableIconElement extends Components.SuiFullyCustomizableIcon, HTMLStencilElement {
     }
@@ -166,6 +174,7 @@ declare global {
         "sui-colors": HTMLSuiColorsElement;
         "sui-detailed-records-icon": HTMLSuiDetailedRecordsIconElement;
         "sui-facebook-icon": HTMLSuiFacebookIconElement;
+        "sui-fonts": HTMLSuiFontsElement;
         "sui-fully-customizable-icon": HTMLSuiFullyCustomizableIconElement;
         "sui-illustration-icon": HTMLSuiIllustrationIconElement;
         "sui-instagram-icon": HTMLSuiInstagramIconElement;
@@ -196,6 +205,8 @@ declare namespace LocalJSX {
     interface SuiDetailedRecordsIcon {
     }
     interface SuiFacebookIcon {
+    }
+    interface SuiFonts {
     }
     interface SuiFullyCustomizableIcon {
     }
@@ -230,6 +241,7 @@ declare namespace LocalJSX {
         "sui-colors": SuiColors;
         "sui-detailed-records-icon": SuiDetailedRecordsIcon;
         "sui-facebook-icon": SuiFacebookIcon;
+        "sui-fonts": SuiFonts;
         "sui-fully-customizable-icon": SuiFullyCustomizableIcon;
         "sui-illustration-icon": SuiIllustrationIcon;
         "sui-instagram-icon": SuiInstagramIcon;
@@ -254,6 +266,7 @@ declare module "@stencil/core" {
             "sui-colors": LocalJSX.SuiColors & JSXBase.HTMLAttributes<HTMLSuiColorsElement>;
             "sui-detailed-records-icon": LocalJSX.SuiDetailedRecordsIcon & JSXBase.HTMLAttributes<HTMLSuiDetailedRecordsIconElement>;
             "sui-facebook-icon": LocalJSX.SuiFacebookIcon & JSXBase.HTMLAttributes<HTMLSuiFacebookIconElement>;
+            "sui-fonts": LocalJSX.SuiFonts & JSXBase.HTMLAttributes<HTMLSuiFontsElement>;
             "sui-fully-customizable-icon": LocalJSX.SuiFullyCustomizableIcon & JSXBase.HTMLAttributes<HTMLSuiFullyCustomizableIconElement>;
             "sui-illustration-icon": LocalJSX.SuiIllustrationIcon & JSXBase.HTMLAttributes<HTMLSuiIllustrationIconElement>;
             "sui-instagram-icon": LocalJSX.SuiInstagramIcon & JSXBase.HTMLAttributes<HTMLSuiInstagramIconElement>;
