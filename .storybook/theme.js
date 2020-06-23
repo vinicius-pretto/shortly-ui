@@ -12,9 +12,10 @@ export default create({
   appBg: shortlyTokens["color-secondary"],
   appBorderRadius: 6,
 
-  inputTextColor: "#FFF",
+  inputTextColor: shortlyTokens["color-white"],
+  inputBg: shortlyTokens["color-secondary"],
 
   brandTitle: "Shortly UI",
   brandUrl: "/",
-  brandImage: "https://storage.cloud.google.com/shortly/shortly-logo.png",
+  brandImage: "https://storage.cloud.google.com/shortly/shortly-logo.png"
 });
