@@ -8,8 +8,6 @@ const colors = Object.keys(shortlyTokens)
     value: shortlyTokens[token]
   }));
 
-console.log(colors);
-
 @Component({
   tag: "sui-colors",
   styleUrl: "sui-colors.scss",
