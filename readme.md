@@ -19,5 +19,5 @@ Stencil components are just Web Components, so they work in any major framework 
 Put the following script tag in the head of your index.html.
 
 ```
-<script src='https://unpkg.com/shortly-ui@0.0.2/dist/shortly-ui.js'><script>
+<script src="https://unpkg.com/shortly-ui@latest/dist/shortly-ui.js"></script>
 ```
