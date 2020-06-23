@@ -11,6 +11,6 @@
 
 ```bash
 <sui-card card-title="title" description="description">
-  <sui-statistics-icon />
+  <sui-statistics-icon></sui-statistics-icon>
 </sui-card>
 ```

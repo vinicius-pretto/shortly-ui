@@ -8,4 +8,4 @@ export default {
   }
 };
 
-export const Default = () => "<sui-illustration-icon />";
+export const Default = () => "<sui-illustration-icon></sui-illustration-icon>";

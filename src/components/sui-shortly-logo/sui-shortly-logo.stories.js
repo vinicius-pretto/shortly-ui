@@ -10,4 +10,7 @@ export default {
 };
 
 export const Default = () =>
-  `<sui-shortly-logo color="${select("color", ["primary", "neutral"])}"/>`;
+  `<sui-shortly-logo color="${select("color", [
+    "primary",
+    "neutral"
+  ])}"></sui-shortly-logo>`;

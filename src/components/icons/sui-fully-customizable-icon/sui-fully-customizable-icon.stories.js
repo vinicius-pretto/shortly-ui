@@ -8,4 +8,5 @@ export default {
   }
 };
 
-export const Default = () => "<sui-fully-customizable-icon />";
+export const Default = () =>
+  "<sui-fully-customizable-icon></sui-fully-customizable-icon>";

@@ -11,11 +11,11 @@
 **Default**
 
 ```bash
-<sui-shortly-logo />
+<sui-shortly-logo></sui-shortly-logo>
 ```
 
 **Specifying a color**
 
 ```bash
-<sui-shortly-logo color="neutral" />
+<sui-shortly-logo color="neutral"></sui-shortly-logo>
 ```

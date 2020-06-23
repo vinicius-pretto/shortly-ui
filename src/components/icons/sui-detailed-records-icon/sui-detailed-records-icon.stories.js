@@ -8,4 +8,5 @@ export default {
   }
 };
 
-export const Default = () => "<sui-detailed-records-icon />";
+export const Default = () =>
+  "<sui-detailed-records-icon></sui-detailed-records-icon>";
