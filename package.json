@@ -1,6 +1,6 @@
 {
   "name": "shortly-ui",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Shortly UI Components",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
