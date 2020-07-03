@@ -34,7 +34,7 @@
     "@storybook/addon-notes": "^5.3.19",
     "@storybook/html": "^5.3.19",
     "babel-loader": "^8.1.0",
-    "shortly-tokens": "0.0.15"
+    "shortly-tokens": "0.0.16"
   },
   "license": "MIT",
   "dependencies": {}
